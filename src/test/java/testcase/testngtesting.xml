@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel Suite With Groups" parallel="tests" thread-count="3">
+
+    
+
+    <groups>
+        <run>
+            <include name="Sanity"/>
+            <include name="Regression"/>
+            <include name="Functional"/>
+        </run>
+    </groups>
+    
+    <listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+
+    <test name="TC_001 Test">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcase.tc__001"/>
+        </classes>
+    </test>
+
+    <test name="Data Driven Login Test">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcase.datadriventestcase"/>
+        </classes>
+    </test>
+
+    <test name="Login Test">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcase.loginTestcase"/>
+        </classes>
+    </test>
+
+</suite>

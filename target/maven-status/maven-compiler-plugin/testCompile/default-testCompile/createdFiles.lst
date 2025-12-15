@@ -1,0 +1,12 @@
+pageclass\baseclass.class
+pageclass\registerpagepom.class
+utilities\Dataproviders.class
+utilities\extentreportgenerator.class
+utilities\ExcelUtility.class
+testcase\tc__001.class
+testcase\testbase.class
+pageclass\homepagepom.class
+testcase\loginTestcase.class
+testcase\datadriventestcase.class
+pageclass\myaccountpage.class
+pageclass\loginpagepom.class
