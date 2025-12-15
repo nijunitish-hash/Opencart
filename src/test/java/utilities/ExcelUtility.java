@@ -1,61 +1,50 @@
 package utilities;
 
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
 
-    private String path;
-    private FileInputStream fis;
-    private FileOutputStream fos;
-    private Workbook workbook;
-    private Sheet sheet;
-    private Row row;
-    private Cell cell;
+    String path;
 
     public ExcelUtility(String path) {
         this.path = path;
     }
 
-    // Get row count
     public int getRowCount(String sheetName) throws IOException {
-        fis = new FileInputStream(path);
-        workbook = new XSSFWorkbook(fis);
-        sheet = workbook.getSheet(sheetName);
-        int rowCount = sheet.getLastRowNum();
-        workbook.close();
+        FileInputStream fis = new FileInputStream(path);
+        Workbook wb = new XSSFWorkbook(fis);
+        Sheet sheet = wb.getSheet(sheetName);
+        int rowcount = sheet.getLastRowNum();
+        wb.close();
         fis.close();
-        return rowCount;
+        return rowcount;
     }
 
-    // Get cell count in a row
-    public int getCellCount(String sheetName, int rowNum) throws IOException {
-        fis = new FileInputStream(path);
-        workbook = new XSSFWorkbook(fis);
-        sheet = workbook.getSheet(sheetName);
-        row = sheet.getRow(rowNum);
-        int cellCount = row.getLastCellNum();
-        workbook.close();
+    public int getCellCount(String sheetName, int rownum) throws IOException {
+        FileInputStream fis = new FileInputStream(path);
+        Workbook wb = new XSSFWorkbook(fis);
+        Sheet sheet = wb.getSheet(sheetName);
+        Row row = sheet.getRow(rownum);
+        int cellcount = row.getLastCellNum();
+        wb.close();
         fis.close();
-        return cellCount;
+        return cellcount;
     }
 
-    // Get cell data
-    public String getCellData(String sheetName, int rowNum, int colNum) throws IOException {
-        fis = new FileInputStream(path);
-        workbook = new XSSFWorkbook(fis);
-        sheet = workbook.getSheet(sheetName);
-        row = sheet.getRow(rowNum);
-        cell = row.getCell(colNum);
+    public String getCellData(String sheetName, int rownum, int colnum) throws IOException {
+        FileInputStream fis = new FileInputStream(path);
+        Workbook wb = new XSSFWorkbook(fis);
+        Sheet sheet = wb.getSheet(sheetName);
+        Row row = sheet.getRow(rownum);
+        Cell cell = row.getCell(colnum);
 
         DataFormatter formatter = new DataFormatter();
         String data = formatter.formatCellValue(cell);
 
-        workbook.close();
+        wb.close();
         fis.close();
         return data;
     }

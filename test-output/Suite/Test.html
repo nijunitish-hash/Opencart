@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 11 18:46:39 GMT 2025</td>
+<td>Started on:</td><td>Mon Dec 15 21:43:15 GMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11163 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1043 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,50 +77,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcase.datadriventestcase.logout()'><b>logout</b><br>Test class: testcase.datadriventestcase</td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
 	at testcase.testbase.logout(testbase.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1453650546", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1453650546'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1980194149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1980194149'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
 	at testcase.testbase.logout(testbase.java:107)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -161,135 +122,11 @@ Session ID: 6f177244963b4da4be74b33432de8526
 </tr>
 <tr>
 <td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: bvg1234@gmail.com, google@123, Invalid</td>
-<td><div><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+<td><div><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2013613908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2013613908'><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at org.testng.Assert.fail(Assert.java:111)
-	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testcase.datadriventestcase@6ee660fb</td></tr>
-<tr>
-<td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: lakshmi@gmail.com, Elephant@123, Invalid</td>
-<td><div><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260390769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1260390769'><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at org.testng.Assert.fail(Assert.java:111)
-	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>testcase.datadriventestcase@6ee660fb</td></tr>
-<tr>
-<td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: abc123@gmail.com, test@123, Valid</td>
-<td><div><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
-	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1281361915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1281361915'><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133177937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace133177937'><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at org.testng.Assert.fail(Assert.java:111)
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -323,27 +160,49 @@ Session ID: 6f177244963b4da4be74b33432de8526
 <td>testcase.datadriventestcase@6ee660fb</td></tr>
 <tr>
 <td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: nijunitish@gmaail.com, Believeyou@123, Invalid</td>
-<td><div><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+<td><div><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146654783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2146654783'><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2110785285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110785285'><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcase.datadriventestcase@6ee660fb</td></tr>
+<tr>
+<td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: lakshmi@gmail.com, Elephant@123, Invalid</td>
+<td><div><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace81269359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81269359'><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at org.testng.Assert.fail(Assert.java:111)
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -377,27 +236,49 @@ Session ID: 6f177244963b4da4be74b33432de8526
 <td>testcase.datadriventestcase@6ee660fb</td></tr>
 <tr>
 <td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: nitishjagadeskumar@gmail.com, Believeyou@100, Valid</td>
-<td><div><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+<td><div><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1706655559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1706655559'><pre>java.lang.AssertionError: Test execution failed with exception: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=143.0.3650.75)
-Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6f177244963b4da4be74b33432de8526, findElement {using=xpath, value=//a[@title=&apos;My Account&apos;]//span[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 143.0.3650.75, fedcm:accounts: true, goog:processID: 8452, ms:edgeOptions: {debuggerAddress: localhost:58376}, msedge: {msedgedriverVersion: 143.0.3650.66 (507b0dd34c3d..., userDataDir: C:\Users\nijun\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58376/devtoo..., se:cdpVersion: 143.0.3650.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f177244963b4da4be74b33432de8526
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1833592262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1833592262'><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at org.testng.Assert.fail(Assert.java:111)
+	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testcase.datadriventestcase@6ee660fb</td></tr>
+<tr>
+<td title='testcase.datadriventestcase.verifylogindata()'><b>verifylogindata</b><br>Test class: testcase.datadriventestcase<br>Parameters: abc123@gmail.com, test@123, Valid</td>
+<td><div><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1285072597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1285072597'><pre>java.lang.AssertionError: Test execution failed with exception: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
 	at org.testng.Assert.fail(Assert.java:111)
 	at testcase.datadriventestcase.verifylogindata(datadriventestcase.java:84)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)

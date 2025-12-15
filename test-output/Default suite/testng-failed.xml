@@ -10,20 +10,6 @@
           <include name="logintest"/>
         </methods>
       </class> <!-- testcase.loginTestcase -->
-      <class name="testcase.datadriventestcase">
-        <methods>
-          <include name="openurl"/>
-          <include name="logout"/>
-          <include name="verifylogindata"/>
-        </methods>
-      </class> <!-- testcase.datadriventestcase -->
-      <class name="testcase.tc__001">
-        <methods>
-          <include name="logout"/>
-          <include name="openurl"/>
-          <include name="testregister"/>
-        </methods>
-      </class> <!-- testcase.tc__001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
